@@ -1,0 +1,39 @@
+body {
+	text-indent:0px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font: 12pt / 1.2 Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 860px;
+    margin: 40px auto;
+    background-color: white;
+}
+
+#photo {
+    padding: 0px 0px 50px 70px;
+    float: right;
+}
+
+#photo img {
+    width: 300px;
+    border-radius: 5%;
+    /* box-shadow: 3px 3px 6px gray; */
+}
+
+#publications li, #notes li {
+    margin: 1.2rem 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+small {
+    padding: 10px;
+}
+
+button {
+    display: none;
+}
+
+td {
+    padding-right: 10px;
+}
