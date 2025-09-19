@@ -17,7 +17,14 @@
   </script>
   <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-  <!-- <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script> -->   
+  <!-- <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script> -->
+
+  <!-- for code syntax highlighting -->
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/stackoverflow-light.min.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/languages/ruby.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <!-- possible styles: github, rainbow, paraiso-light, rose-pine-dawn, routeros, stackoverflow-light -->
 </head>
 
 <body>
@@ -28,26 +35,27 @@
     <image src="./img/profile.jpg" />
   </div>
 
-  <p>
-    I am a fifth-year Ph.D. student
-    at <a href="https://www.math.ntu.edu.tw/">National Taiwan University</a>,
-    advised by <a
-      href="https://www.theplan.it/eng/award-2020-Education/ntu-chee-chun-leung-cosmology-hall-a-floating-cube-in-space-kris-yao-artech">Chee-Chun
-      Leung (梁次震)</a>.
-    Before coming to NTU I studied math at the <a href="http://math.washington.edu/">University of Washington</a> and the <a href="">Math in
-      Moscow</a> program.
-  </p>
-  <p>
-    I am interested in problems in combinatorics,
-    tropical geometry,
-    and number theory.
-  </p>
-  <p>
-    Here is my <a href="files/shinchan_sample_cv.pdf">CV</a>.
-  </p>
+  <div id="about">
+    <p>
+      I am a fifth-year Ph.D. student
+      at <a href="https://www.math.ntu.edu.tw/">National Taiwan University</a>,
+      advised by <a
+        href="https://www.theplan.it/eng/award-2020-Education/ntu-chee-chun-leung-cosmology-hall-a-floating-cube-in-space-kris-yao-artech">Chee-Chun
+        Leung (梁次震)</a>.
+      Before coming to NTU I studied math at the <a href="http://math.washington.edu/">University of Washington</a>.
+    </p>
+    <p>
+      I study equations of the form $\int_0^\infty e^{-2\pi x^2} \, dx$.
+      I am also interested in the groups \(H_k(\mathcal M_g, \mathbb Q)\) and
+      $\pi_k(\mathrm{Sym}^\infty \mathcal M^\mathrm{trop}_g)$.
+    </p>
+    <p>
+      Here is my <a href="files/shinchan_sample_cv.pdf">CV</a>.
+    </p>
+  </div>
 
   <h3>Contact</h3>
-  <table>
+  <table id="contact">
     <tbody>
       <tr>
         <td> email: </td>
@@ -60,11 +68,11 @@
       </tr>
       <tr>
         <td> address: </td>
-        <td> 530 Church Street </td>
+        <td> No. 1, Sec. 4, Roosevelt Rd. </td>
       </tr>
       <tr>
         <td></td>
-        <td> Ann Arbor, MI 48109 </td>
+        <td> Taipei City 106, Taiwan (R.O.C.) </td>
       </tr>
     </tbody>
   </table>
@@ -83,144 +91,145 @@
   </ul>
 
   <h3>Publications</h3>
-  <ol id="publications">
-    <li>
-      "Vector encoding of phylogenetic trees by ordered leaf attachment,"
-      coauthored with <a href="https://www.fredhutch.org/en/faculty-lab-directory/matsen-frederick.html">Erick
-        Matsen</a> and <a href="https://zcrabbit.github.io/">Cheng Zhang</a>, submitted.
-      <br />
-      <a href="https://arxiv.org/abs/2503.10169">[arxiv]</a>
-    </li>
+  <div class="publications">
 
-    <li>
-      "Lower rational approximations and Farey staircases,"
-      <em>Integers</em> 24 (2024), paper A37.
-      <br />
-      <a href="https://arxiv.org/abs/2303.02935">[arXiv]</a>
-      <a href="https://doi.org/10.5281/zenodo.10944039">[DOI]</a>
-      <a href="http://math.colgate.edu/~integers/y37/y37.pdf">[pdf]</a>
-    </li>
+    <ol class="publications">
+      <li>
+        "Vector encoding of phylogenetic trees by ordered leaf attachment,"
+        coauthored with <a href="https://www.fredhutch.org/en/faculty-lab-directory/matsen-frederick.html">Erick
+          Matsen</a> and <a href="https://zcrabbit.github.io/">Cheng Zhang</a>, <em>submitted</em>.
+        <br />
+        <a href="https://arxiv.org/abs/2503.10169">[arxiv]</a>
+      </li>
 
-    <li>
-      "The floor quotient partial order,"
-      coauthored with <a href="http://www.math.lsa.umich.edu/~lagarias/">Jeffrey Lagarias</a>,
-      <em>Advances in Applied Mathematics</em> 153 (2024).
-      <br />
-      <a href="https://arxiv.org/abs/2212.11689">[arXiv]</a>
-      <a href="https://doi.org/10.1016/j.aam.2023.102615">[DOI]</a>
-    </li>
+      <li>
+        "Lower rational approximations and Farey staircases,"
+        <em>Integers</em> 24 (2024), paper A37.
+        <br />
+        <a href="https://arxiv.org/abs/2303.02935">[arXiv]</a>
+        <a href="https://doi.org/10.5281/zenodo.10944039">[DOI]</a>
+        <a href="http://math.colgate.edu/~integers/y37/y37.pdf">[pdf]</a>
+        <a href="">[bibtex]</a>
+      </li>
 
-    <li>
-      "Derangements and the p-adic incomplete gamma function,"
-      coauthored with <a href="https://andrewodesky.com/">Andrew O'Desky</a>,
-      <em>Transactions of the American Mathematical Society</em> 376 (2023), pp. 1065-1087.
-      <br />
-      <a href="https://arxiv.org/abs/2012.04615">[arXiv]</a>
-      <a href="https://doi.org/10.1090/tran/8716">[DOI]</a>
-    </li>
+      <li>
+        "The floor quotient partial order,"
+        coauthored with <a href="http://www.math.lsa.umich.edu/~lagarias/">Jeffrey Lagarias</a>,
+        <em>Advances in Applied Mathematics</em> 153 (2024).
+        <br />
+        <a href="https://arxiv.org/abs/2212.11689">[arXiv]</a>
+        <a href="https://doi.org/10.1016/j.aam.2023.102615">[DOI]</a>
+        <a href="">[bibtex]</a>
+      </li>
 
-    <li>
-      "Descartes' rule of signs for finite fields,"
-      in preparation.
-    </li>
+      <li>
+        "Derangements and the p-adic incomplete gamma function,"
+        coauthored with <a href="https://andrewodesky.com/">Andrew O'Desky</a>,
+        <em>Transactions of the American Mathematical Society</em> 376 (2023), pp. 1065-1087.
+        <br />
+        <a href="https://arxiv.org/abs/2012.04615">[arXiv]</a>
+        <a href="https://doi.org/10.1090/tran/8716">[DOI]</a>
+        <a href="https://mathscinet.ams.org/mrlookup?au=richman&ti=derangements%20and%20p%20adic&year=2023">[BibTex]</a>
+      </li>
 
-  </ol>
+      <li>
+        "Descartes' rule of signs for finite fields,"
+        <em>in preparation</em>.
+      </li>
 
-  <h3>Notes and Presentations</h3>
-  <ul id="notes">
-    <li>
-      "Matchings in convergent graph sequences," March 2017<br />
-      [<a href="files/matchings_convergent_notes.pdf">[notes]</a>]
-    </li>
-    <li>
-      "Moduli space of tropical curves," June 2017
-      <a href="moduli-tropical-curves.pdf">[notes]</a>
-    </li>
-
-    <li>
-      "Local Gauss-Lucas theorem," July 2017
-      <a href="files/ricci_flow_slides.pdf">[ slides ]</a>
-    </li>
-
-    <li>
-      "Dilated floor functions having nonnegative commutator," July 2017
-      <a href="files/ola_code_poster.pdf">[poster]</a>
-    </li>
-
-    <li>
-      "Descartes' rule and beyond," September 2017
-      <a href="descartes_rule.pdf">slides</a>
-    </li>
-
-  </ul>
-
-  <h3>Teaching</h3>
-  <p>
-    I have experience teaching the fundamental theorem of calculus
-    \[ \int_a^b f'(x) \, dx = f(b) - f(a) .\]
-    This is related to the isomorphism
-    $\mathrm{Pic}^0(X) \cong H^0(X, \Omega^1)^\vee / H_1(X, \mathbb Z)$
-    when $X$ is an algebraic curve.
-  </p>
-  <div>
-    Fall 2014: <a href="https://web.archive.org/web/20190224190118/http://www.math.lsa.umich.edu/courses/115/">Math
-      115</a>
-    </br>
-    Winter 2015: <a href="https://web.archive.org/web/20190224190118/http://www.math.lsa.umich.edu/courses/116">Math
-      116</a>
-    </br>
-    Fall 2015: <a href="https://web.archive.org/web/20190224190118/http://www.math.lsa.umich.edu/courses/216">Math
-      216</a>
-    </br>
-    Winter 2016: <a href="https://web.archive.org/web/20190224190118/http://www.math.lsa.umich.edu/courses/116">Math
-      116</a>
-    </br>
-    Fall 2016: <a href="https://web.archive.org/web/20190224190118/http://www.math.lsa.umich.edu/courses/215">Math
-      215</a>
-    </br>
-    Winter 2018: Math 116
-    </br>
-    </br>
-    Winter 2019: <a href="116-w19.html">Math 116</a>,
-    <a href="origami.html">Origami on Lattices</a>
+    </ol>
   </div>
 
-  <h3>Links</h3>
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <a href="quals.html">Analysis quals</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="virtual_cube/cube.html">Rubik's cube</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="quotes.html">Quotes</a> about math
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="https://web.archive.org/web/20190224190118/http://cheng.staff.shef.ac.uk/misc/lectures.pdf">Eugenia
-            Cheng</a> on the lecture system
-        </td>
-      </tr>
-      <!--
-<a href="http://www.math.vanderbilt.edu/~msapir/tt.html">Mark Sapir</a> giving encouragement
-</br>
--->
-      <tr>
-        <td>
-          <a href="https://web.archive.org/web/20190224190118/http://www.taolin.info/novels">Why</a> should I do
-          math?
-          (43., 35., 31., 10., 28., 8., 11., 14., 41., 26., 21., 18.)
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <h3>Notes and Presentations</h3>
+  <div class="notes">
+
+    <ul class="notes">
+      <li>
+        "Vector encoding of phylogenetic trees," September 2024
+        <br />
+        <a href="files/ola_code_poster.pdf">[poster]</a>
+      </li>
+
+      <li>
+        "Ricci curvature on graphs," JMM San Francisco, January 2024
+        <br />
+        <a href="files/ricci_flow_slides.pdf">[slides]</a>
+      </li>
+
+      <li>
+        "Matchings in convergent graph sequences," March 2017
+        <br />
+        <a href="files/matchings_convergent_notes.pdf">[notes]</a>
+      </li>
+    </ul>
+  </div>
+
+  <h3>Teaching</h3>
+  <div class="teaching">
+    <p>
+      I have experience teaching the fundamental theorem of calculus
+      \[ \int_a^b f'(x) \, dx = f(b) - f(a) .\]
+      This is related to the isomorphism
+      $$\mathrm{Pic}^0(X) \cong H^0(X, \Omega^1)^\vee / H_1(X, \mathbb Z)$$
+      when $X$ is an algebraic curve.
+    </p>
+
+    <strong>University of Washington</strong>
+    <ul>
+      <li>
+        <a href="https://web.archive.org/web/20190224190118/http://www.math.lsa.umich.edu/courses/115/">Math
+          115</a>, Calculus 1, Fall 2019
+      </li>
+      <li>
+        <a href="">Math 208</a>, Linear Algebra, Fall 2020
+      </li>
+    </ul>
+  </div>
+
+  <h3>Service</h3>
+  <div class="service">
+
+    <strong>Organizer</strong>
+    <ul>
+      <li>Student Combinatorics Seminar, University of Washington</li>
+      <li>Directed Reading Program</li>
+    </ul>
+
+    <strong>Journal Reviewer</strong>
+    <ul>
+      <li>Integers</li>
+      <li>Electronic Journal of Combinatorics</li>
+      <li>Taiwanese J. Math.</li>
+      <li>Inventiones</li>
+    </ul>
+  </div>
+
+  <h3>Misc. Links</h3>
+  <div class="links">
+
+    <ul>
+      <li>
+        <a href="https://mathscinet.ams.org/mathscinet">MathSciNet</a>
+      </li>
+      <li>
+        <a href="https://oeis.org/">Online Encyclopedia of Integer Sequences</a>
+      </li>
+      <li>
+        Code syntax highlighting
+        <pre><code class="language-ruby"># Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end</code></pre>
+      </li>
+      <li>
+        A blockquote about math
+        <blockquote>
+          God is always doing geometry.
+          <br />
+          -- Plato
+        </blockquote>
+      </li>
+    </ul>
+  </div>
 
 </body>
