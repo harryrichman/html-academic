@@ -41,6 +41,12 @@ pre code {
     border-radius: 5px;
 }
 
+code {
+    background: #f6f6f6;
+    padding: 0.1em;
+    border-radius: 2px;
+}
+
 blockquote {
   border-left: 1px solid #e5e5e5;
   margin: 1.0em 10px;
